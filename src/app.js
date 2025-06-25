@@ -8,10 +8,9 @@ let when = ['before the class', 'when I was sleeping', 'while I was exercising',
 
 function random(options) {
     let randomOption = Math.floor(Math.random() * options.length)
-    return options[randomOption] 
+    return options[randomOption]
 }
 
 window.onload = function() {
-  const excuse = document.getElementById("excuse")
-  excuse.innerHTML= `<h2>${random(who)} ${random(action)} ${random(what)} ${random(when)}</h2>`;
+  document.getElementById("excuse").innerHTML = `<h2>${random(who)} ${random(action)} ${random(what)} ${random(when)}</h2>`;
 };
